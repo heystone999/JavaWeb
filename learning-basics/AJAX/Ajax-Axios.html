@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax-Axios</title>
+    <script src="js/axios-0.18.0.js"></script>
+</head>
+<body>
+<input type="button" value="获取数据GET" onclick="get()">
+<input type="button" value="删除数据POST" onclick="post()">
+</body>
+<script>
+    // function get() {
+    //     axios({
+    //         method: "get",
+    //         url: "list.json"
+    //     }).then(result => {
+    //         console.log(result.data)
+    //     })
+    // }
+    axios.get("list.json").then(result => {
+        console.log(result.data)
+    })
+
+    // function post() {
+    //     axios({
+    //         method: "post",
+    //         url: "deleteById.json",
+    //         data: "id=1"
+    //     }).then(result => {
+    //         console.log(result.data)
+    //     })
+    // }
+    axios.post("deleteById.json").then(result => {
+        console.log(result.data)
+    })
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Native Ajax</title>
+</head>
+<body>
+<input type="button" value="获取数据" onclick="getData()">
+<div id="div1"></div>
+</body>
+<script>
+    function getData() {
+        var xmlHttpRequest = new XMLHttpRequest()
+
+        xmlHttpRequest.open('GET', 'list.json',true)
+        xmlHttpRequest.send()
+
+        xmlHttpRequest.onreadystatechange = function () {
+            if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) {
+                document.getElementById('div1').innerHTML = xmlHttpRequest.responseText
+            }
+        }
+    }
+</script>
+</html>

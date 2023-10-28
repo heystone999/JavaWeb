@@ -1,0 +1,30 @@
+{
+  "code": 1,
+  "message": "success",
+  "data": [
+    {
+      "id": 1,
+      "name": "Xie Xun",
+      "gender": 1,
+      "job": "班主任"
+    },
+    {
+      "id": 2,
+      "name": "Yin Tianzheng",
+      "gender": 1,
+      "job": "讲师"
+    },
+    {
+      "id": 3,
+      "name": "Wei Yixiao",
+      "gender": 1,
+      "job": "讲师"
+    },
+    {
+      "id": 4,
+      "name": "Jiang Bowen",
+      "gender": 2,
+      "job": "教授"
+    }
+  ]
+}

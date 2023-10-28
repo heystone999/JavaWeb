@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-obj-DOM</title>
+</head>
+<body>
+
+<img id="h1" src="img/off.gif"> <br><br>
+
+<div class="cls">STONE</div>
+<br>
+<div class="cls">暴躁猫猫头</div>
+<br>
+
+<input type="checkbox" name="hobby"> 恰饭
+<input type="checkbox" name="hobby"> 睡觉
+<input type="checkbox" name="hobby"> 暴打tjm
+</body>
+<script>
+    // var img = document.getElementById("h1")
+    // alert(img)
+
+    // var divs = document.getElementsByTagName('div')
+    // for (let i = 0; i < divs.length; i++) {
+    //     alert(divs[i])
+    // }
+
+    // var ins = document.getElementsByName('hobby')
+    // for (let i = 0; i < ins.length; i++) {
+    //     alert(ins[i])
+    // }
+
+    // var divs = document.getElementsByClassName('cls');
+    // for (let i = 0; i < divs.length; i++) {
+    //     alert(divs[i])
+    // }
+
+
+    // var divs = document.getElementsByTagName('div')
+    // var div1 = divs[0];
+    // div1.innerHTML = "Stone"
+
+
+    img = document.getElementById("h1")
+    img.src = "img/on.gif"
+    var divs = document.getElementsByTagName('div')
+    for (let i = 0; i < divs.length; i++) {
+        const div = divs[i];
+        div.innerHTML += "<font color=\"red\">very good</font>"
+    }
+    var ins = document.getElementsByName('hobby')
+    for (let i = 0; i < ins.length; i++) {
+        const check = ins[i]
+        check.checked = true
+    }
+
+
+</script>
+</html>

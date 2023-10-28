@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emps>
+    <emp>
+        <name>金毛狮王</name>
+        <age>55</age>
+        <image>https://www.kth.se/polopoly_fs/1.77259.1610365240!/KTH_Logotyp_RGB_2013-2.svg</image>
+        <gender>1</gender>
+        <job>1</job>
+    </emp>
+
+    <emp>
+        <name>白眉鹰王</name>
+        <age>65</age>
+        <image>https://www.chalmers.se/_next/static/media/logo.81582248.svg</image>
+        <gender>1</gender>
+        <job>1</job>
+    </emp>
+
+    <emp>
+        <name>青翼蝠王</name>
+        <age>45</age>
+        <image>https://vu.nl/assets/images/VU-logo-nobg.svg</image>
+        <gender>1</gender>
+        <job>1</job>
+    </emp>
+
+    <emp>
+        <name>紫衫龙王</name>
+        <age>38</age>
+        <image>https://liu.se/-/media/liu/2016/12/02/liu-primary-black.png</image>
+        <gender>2</gender>
+        <job>3</job>
+    </emp>
+
+</emps>

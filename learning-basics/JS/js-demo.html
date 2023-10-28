@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS-event-case</title>
+</head>
+<body>
+<img id="light" src="img/off.gif"> <br>
+<input type="button" value="点亮" onclick="on()">
+<input type="button" value="熄灭" onclick="off()">
+<br><br>
+
+<input type="text" id="name" value="STONE" onfocus="lower()" onblur="upper()">
+<br><br>
+
+<input type="checkbox" name="hobby">movie
+<input type="checkbox" name="hobby">travel
+<input type="checkbox" name="hobby">game
+<br>
+
+<input type="button" value="全选" onclick="checkAll()">
+<input type="button" value="反选" onclick="reverse()">
+
+</body>
+<script>
+    function on() {
+        img = document.getElementById("light")
+        img.src = "img/on.gif"
+    }
+
+    function off() {
+        img = document.getElementById("light")
+        img.src = "img/off.gif"
+    }
+
+    function lower() {
+        var input = document.getElementById("name")
+        input.value = input.value.toLowerCase()
+    }
+
+    function upper() {
+        var input = document.getElementById("name")
+        input.value = input.value.toUpperCase()
+    }
+
+    function checkAll() {
+        const hobbys = document.getElementsByName("hobby");
+        for (let i = 0; i < hobbys.length; i++) {
+            const element = hobbys[i]
+            element.checked = true
+        }
+    }
+
+    function reverse() {
+        const hobbys = document.getElementsByName("hobby");
+        for (let i = 0; i < hobbys.length; i++) {
+            const element = hobbys[i]
+            element.checked = !element.checked
+        }
+    }
+</script>
+</html>
