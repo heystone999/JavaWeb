@@ -4,11 +4,14 @@ import com.stone.dao.EmpDao;
 import com.stone.pojo.Emp;
 import com.stone.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-//@Component
+
+@Service
 public class EmpServiceB implements EmpService {
     @Autowired
     private EmpDao empDao;

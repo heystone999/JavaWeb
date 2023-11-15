@@ -6,6 +6,7 @@ import com.stone.service.EmpService;
 import com.stone.service.impl.EmpServiceA;
 import com.stone.utils.XmlParseUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,6 +15,7 @@ import java.util.List;
 
 @RestController
 public class EmpController {
+    @Qualifier("empServiceB")
     @Autowired
     private EmpService empService;
 
