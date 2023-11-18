@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @Slf4j
+@RequestMapping("/depts")
 @RestController
 public class DeptController {
 //    private static Logger log= LoggerFactory.getLogger(DeptController.class)
@@ -24,7 +25,7 @@ public class DeptController {
 
 
     //    @RequestMapping(value = "/depts",method = RequestMethod.GET)
-    @GetMapping("/depts")
+    @GetMapping
     public Result list() {
         log.info("查询全部部门数据");
 
@@ -35,16 +36,16 @@ public class DeptController {
 
     }
 
-    @DeleteMapping("/depts/{id}")
+    @DeleteMapping("/{id}")
     public Result delete(@PathVariable Integer id) {
         log.info("根据id删除部门:{}", id);
         deptService.delete(id);
         return Result.success();
     }
 
-    @PostMapping("/depts")
-    public Result add(@RequestBody Dept dept){
-        log.info("新增部门:{}",dept);
+    @PostMapping
+    public Result add(@RequestBody Dept dept) {
+        log.info("新增部门:{}", dept);
         deptService.add(dept);
         return Result.success();
 
