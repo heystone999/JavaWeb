@@ -1,4 +1,4 @@
-package com.stone.comtroller;
+package com.stone.controller;
 
 import com.stone.pojo.Emp;
 import com.stone.pojo.Result;

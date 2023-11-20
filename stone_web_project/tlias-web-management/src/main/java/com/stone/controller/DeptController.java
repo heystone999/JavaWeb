@@ -1,17 +1,14 @@
-package com.stone.comtroller;
+package com.stone.controller;
 
 import com.stone.pojo.Dept;
 import com.stone.pojo.Result;
 import com.stone.service.DeptService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.annotations.Delete;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 
 import java.util.List;
-import java.util.logging.Logger;
 
 @Slf4j
 @RequestMapping("/depts")
