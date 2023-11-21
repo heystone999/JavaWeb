@@ -26,7 +26,7 @@ public class LoginController {
 
         if (e != null) {
             Map<String, Object> claims = new HashMap<>();
-            claims.put("id", e.getName());
+            claims.put("id", e.getId());
             claims.put("name", e.getName());
             claims.put("username", e.getUsername());
 
