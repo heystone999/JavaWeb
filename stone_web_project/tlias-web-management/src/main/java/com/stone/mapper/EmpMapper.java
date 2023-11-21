@@ -1,10 +1,7 @@
 package com.stone.mapper;
 
 import com.stone.pojo.Emp;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -67,4 +64,12 @@ public interface EmpMapper {
      */
     @Select("select * from emp where username=#{username} and password=#{password}")
     Emp getByUsernameAndPassword(Emp emp);
+
+    /**
+     * 根据部门ID删除部门下的员工数据
+     *
+     * @param deptId
+     */
+    @Delete("delete from emp where dept_id=#{deptId}")
+    void deleteByDeptId(Integer deptId);
 }
