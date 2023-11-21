@@ -1,5 +1,6 @@
 package com.stone.controller;
 
+import com.stone.anno.Log;
 import com.stone.pojo.Dept;
 import com.stone.pojo.Result;
 import com.stone.service.DeptService;
@@ -33,6 +34,7 @@ public class DeptController {
 
     }
 
+    @Log
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable Integer id) throws Exception {
         log.info("根据id删除部门:{}", id);
@@ -40,6 +42,7 @@ public class DeptController {
         return Result.success();
     }
 
+    @Log
     @PostMapping
     public Result add(@RequestBody Dept dept) {
         log.info("新增部门:{}", dept);
